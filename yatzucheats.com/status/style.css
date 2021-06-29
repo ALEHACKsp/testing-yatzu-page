@@ -1,0 +1,255 @@
+@font-face {
+    src: url(fonts/VCR_OSD_MONO.ttf);
+    font-family: VCR_OSD_MONO;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    background-color: #111111;
+
+}
+
+.video-bg {
+  position: fixed;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background-size: cover;
+}
+
+
+#bgvid{
+        position: fixed;
+        top:50%;
+        left:50%;
+        min-width:100%;
+        min-height:100%;
+        width:auto;
+        height:auto;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background-size: cover;
+}
+
+.wrapper {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: VCR_OSD_MONO;
+    margin: auto;
+
+    text-align: center;
+}
+
+.transbox {
+background-color: rgba(5,4,2,0.5);
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+top: 0; left: 0; bottom: 0; right: 0;
+background-size: cover;
+}
+
+
+.centered {
+ margin: 0;
+ padding: 0;
+ position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.title {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    font-family: VCR_OSD_MONO;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px
+}
+
+.post {
+    font-size: 1em;
+    text-align: center;
+    font-family: VCR_OSD_MONO;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px
+}
+
+/*.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    margin-left: -120px;
+    content: '';
+    background-color: #fff;
+}*/
+
+a:link,a:visited,a:hover,a:active {
+color: #fff;
+}
+
+/* Clip text element */
+.clip-text {
+    font-size: 12em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+        font-family: VCR_OSD_MONO;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.25em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+.purchase {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: VCR_OSD_MONO;
+}
+
+.play {
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        font-family: VCR_OSD_MONO;
+          text-align: center;
+}
+
+.tos {
+    font-size: 1.5em;
+    position: absolute;
+    top: 10 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: VCR_OSD_MONO;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 20px
+}
+
+.feats {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 40%;
+  transform: translateY(-10%);
+  color: #fc7303
+
+}
+
+
+.feats .feat {
+    display: inline-grid;
+    padding: 20px;
+    max-width: 250px;
+    transform: translateY(15%);
+
+}
+
+.feats .feat h3 {
+color: #fff
+}
+
+.feats .feat * {
+    display: inline-block;
+}
+
+.back {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+     top: 37%;
+      transform: translateY(15%);
+    font-family: VCR_OSD_MONO;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px
+}

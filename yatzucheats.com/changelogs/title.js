@@ -1,0 +1,3 @@
+if(document.addEventListener){document.addEventListener("DOMContentLoaded",function(){loaded();});}else if(document.attachEvent){document.attachEvent("onreadystatechange",function(){loaded();});}
+function loaded(){setInterval(loop,400);}
+var x=0;var titleText=["vantacheats.com","vantacheats.co","vantacheats.c","vantacheats.","vantacheats","vantacheat","vantachea","vantache","vantach","vantac","vanta","vant","van","va","v","va","van","vanta","vantac","vantach","vantache","vantachea","vantacheat","vantacheats","vantacheats.","vantacheats.c","vantacheats.co","vantacheats.com"];function loop(){document.getElementsByTagName("title")[0].innerHTML=titleText[x++%titleText.length];}

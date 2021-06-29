@@ -1,0 +1,3 @@
+if(document.addEventListener){document.addEventListener("DOMContentLoaded",function(){loaded();});}else if(document.attachEvent){document.attachEvent("onreadystatechange",function(){loaded();});}
+function loaded(){setInterval(loop,400);}
+var x=0;var titleText=["yatzucheats.com","yatzucheats.co","yatzucheats.c","yatzucheats.","yatzucheats","yatzucheat","yatzuchea","yatzuche","yatzuch","yatzuc","yatzu","vant","van","va","v","va","van","yatzu","yatzuc","yatzuch","yatzuche","yatzuchea","yatzucheat","yatzucheats","yatzucheats.","yatzucheats.c","yatzucheats.co","yatzucheats.com"];function loop(){document.getElementsByTagName("title")[0].innerHTML=titleText[x++%titleText.length];}
